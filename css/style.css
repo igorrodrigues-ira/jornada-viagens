@@ -36,3 +36,10 @@ button {
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+    font-family: "monserrat";
+    font-weight: var(--title-weight);
+    color: var(--primary-color);
+    color: var(--primary-color);
+}
