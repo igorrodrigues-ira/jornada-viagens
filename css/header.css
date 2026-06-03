@@ -30,8 +30,11 @@ nav {
   display: none;
 }
 
-.list-links{
-    list-style: none;
+.list-links {
+  list-style: none;
+}
+.list-links li {
+  margin: 16px 0;
 }
 .list-links li a {
   color: var(--text-secondary-color);
