@@ -1,3 +1,8 @@
+.categories .section-title {
+  width: 312px;
+  margin: 0 auto;
+}
+
 .categories-cards {
   display: flex;
   flex-direction: column;
@@ -6,7 +11,7 @@
   margin-top: 64px;
 }
 
-.categories-cards a.cards {
+.categories-cards a.card {
   width: 312px;
   height: 220px;
   background-color: var(--background-secondary-color);
@@ -18,7 +23,38 @@
   color: var(--text-primary-color);
 }
 
-.categories-cards .card h3{
+.categories-cards .card h3 {
   font-size: 28px;
   font-weight: var(--title-weight);
+}
+
+.categories-cards .card.single-line {
+  padding-top: 50px;
+}
+
+.categories-cards .card.single-line.transfer img {
+  max-height: 80px;
+}
+
+@media screen and (min-width: 768px){
+  .categories .section-title {
+  width: 100%;
+}
+.categories-cards{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+
+@media screen and (min-width: 1024px){
+  .categories-cards{
+    width:430px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+    .categories-cards .card {
+        width: 280px;
+    }
 }
