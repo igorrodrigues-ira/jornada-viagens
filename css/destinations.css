@@ -6,6 +6,13 @@
   margin-bottom: 24px;
 }
 
+.destinations .section-title h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  text-align: center;
+}
+
 .destinations .item h4 {
   font-size: 28px;
   font-weight: var(--title-weight);
@@ -14,8 +21,21 @@
 
 .destinations .item p {
   font-weight: var(--text-weight);
-  display: block;
+  text-align: left;
   font-size: 20px;
   margin: 24px;
-  word-spacing: 18px;
+  word-spacing: 5px;
+  line-height: 1.7;
+}
+
+.destinations .button {
+  display: flex;
+  margin: 0 24px 16px 24px;
+  align-items: center;
+  justify-content: center;
+  width: 326px;
+}
+
+.destinations .button:hover {
+  background-color: var(--primary-color);
 }
