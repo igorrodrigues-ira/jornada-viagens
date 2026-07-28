@@ -5,3 +5,51 @@
   padding: 0;
   margin-bottom: 24px;
 }
+
+.destinations .section-title h2 {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  text-align: center;
+}
+
+.destinations .item h4 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 24px 24px;
+}
+
+.destinations .item p {
+  font-weight: var(--text-weight);
+  text-align: left;
+  font-size: 20px;
+  margin: 24px;
+  word-spacing: 5px;
+  line-height: 1.7;
+}
+
+.destinations .button {
+  display: flex;
+  margin: 0 24px 16px 24px;
+  align-items: center;
+  justify-content: center;
+  width: 276px;
+}
+
+.destinations .button:hover {
+  background-color: var(--primary-color);
+}
+
+.destinations .item .image-tokyo {
+  width: calc(100% - 48px);
+  display: block;
+  margin: 0 24px 0 24px;
+  height: 360px;
+}
+
+.destinations .item .image-osaka {
+  width: calc(100% - 48px);
+  display: block;
+  margin: 0 24px 0 24px;
+  height: 360px;
+}
