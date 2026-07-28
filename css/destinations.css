@@ -5,3 +5,17 @@
   padding: 0;
   margin-bottom: 24px;
 }
+
+.destinations .item h4 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 24px 24px;
+}
+
+.destinations .item p {
+  font-weight: var(--text-weight);
+  display: block;
+  font-size: 20px;
+  margin: 24px;
+  word-spacing: 18px;
+}
