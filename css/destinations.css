@@ -57,3 +57,42 @@
   margin: 0 24px 0 24px;
   height: 360px;
 }
+
+@media screen and (min-width: 768px) {
+  .destinations .section-title h2 {
+    margin: 0 221.5px 0 221.5px;
+  }
+  .destinations .item h4 {
+    margin-left: 60px;
+  }
+
+  .destinations .item p {
+    margin: 24px 60px 24px 60px;
+    word-spacing: 0px;
+    text-align: left;
+  }
+
+  .destinations .button {
+    display: flex;
+    margin: 0 60px 24px 60px;
+    width: 280px;
+    height: 70px;
+    border-radius: 8px;
+  }
+
+  .destinations .item-image-tokyo {
+    background: url(../img/Tokyo-tablet-desktop.png) no-repeat center;
+    background-size: contain;
+    width: 648px;
+    height: 452px;
+    margin: 0 60px 0 60px;
+  }
+
+  .destinations .item-image-osaka {
+    background: url(../img/Osaka-tablet-desktop.png) no-repeat center;
+    background-size: contain;
+    width: 648px;
+    height: 452px;
+    margin: 0 60px 0 60px;
+  }
+}
