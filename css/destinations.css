@@ -40,14 +40,18 @@
   background-color: var(--primary-color);
 }
 
-.destinations .item .image-tokyo {
+.destinations .item-image-tokyo {
+  background: url(../img/Tokyo-mobile.jpg) no-repeat center;
+  background-size: contain;
   width: calc(100% - 48px);
   display: block;
   margin: 0 24px 0 24px;
   height: 360px;
 }
 
-.destinations .item .image-osaka {
+.destinations .item-image-osaka {
+  background: url(../img/Osaka-mobile.jpg) no-repeat center;
+  background-size: contain;
   width: calc(100% - 48px);
   display: block;
   margin: 0 24px 0 24px;
