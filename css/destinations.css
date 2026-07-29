@@ -22,10 +22,10 @@
 .destinations .item p {
   font-weight: var(--text-weight);
   text-align: left;
-  font-size: 20px;
+  font-size: 16px;
   margin: 24px;
   word-spacing: 5px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .destinations .button {
@@ -40,16 +40,95 @@
   background-color: var(--primary-color);
 }
 
-.destinations .item .image-tokyo {
+.destinations .item-image-tokyo {
+  background: url(../img/Tokyo-mobile.jpg) no-repeat center;
+  background-size: contain;
   width: calc(100% - 48px);
   display: block;
   margin: 0 24px 0 24px;
   height: 360px;
 }
 
-.destinations .item .image-osaka {
+.destinations .item-image-osaka {
+  background: url(../img/Osaka-mobile.jpg) no-repeat center;
+  background-size: contain;
   width: calc(100% - 48px);
   display: block;
   margin: 0 24px 0 24px;
   height: 360px;
+}
+
+@media screen and (min-width: 768px) {
+  .destinations .section-title h2 {
+    margin: 0 221.5px 0 221.5px;
+  }
+  .destinations .item h4 {
+    margin-left: 60px;
+  }
+
+  .destinations .item p {
+    margin: 24px 60px 24px 60px;
+    word-spacing: 0px;
+    text-align: left;
+  }
+
+  .destinations .button {
+    display: flex;
+    margin: 0 60px 24px 60px;
+    width: 280px;
+    height: 70px;
+    border-radius: 8px;
+  }
+
+  .destinations .item-image-tokyo {
+    background: url(../img/Tokyo-tablet-desktop.png) no-repeat center;
+    background-size: contain;
+    width: 648px;
+    height: 452px;
+    margin: 0 60px 0 60px;
+  }
+
+  .destinations .item-image-osaka {
+    background: url(../img/Osaka-tablet-desktop.png) no-repeat center;
+    background-size: contain;
+    width: 648px;
+    height: 452px;
+    margin: 0 60px 0 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destinations-items {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 750px;
+  }
+  .destinations .item {
+    display: flex;
+    flex-direction: column; /* Empilha a imagem, h4, p e botão dentro de cada card */
+    flex: 1; /* Faz os dois cards terem exatamente o mesmo tamanho lado a lado */
+    max-width: 500px; /* Evita que os cards fiquem gigantescos em telas muito largas */
+  }
+
+  /* 2. ELEMENTOS FILHOS: Controla cada bloco (card) individualmente */
+  .destinations .items p {
+    margin: 0 0 24px;
+    word: 5px;
+    line-height: 27px;
+  }
+
+  .destinations .items h4 {
+    margin: 0 0 24px;
+  }
+  .destinations .item-image-tokyo,
+  .destinations .item-image-osaka {
+    width: 100%; /* A imagem agora respeita o tamanho responsivo do card */
+    height: 360px; /* Mantém a altura elegante que você escolheu */
+    background-size: cover; /* Preenche o espaço da foto perfeitamente sem distorcer */
+    margin: 0 0 24px 0; /* Remove as margens de 60px do tablet e deixa espaço na base */
+  }
 }
