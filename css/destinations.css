@@ -98,37 +98,58 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .destinations-items {
+  .destinations .destination-items {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin: 0 auto;
+    margin-left: 60px;
     max-width: 1200px;
+
+    justify-content: space-between;
+    box-sizing: border-box;
+    gap: 24px;
     width: 100%;
-    height: 750px;
   }
+
   .destinations .item {
+    flex: 1;
+    height: 588px;
     display: flex;
-    flex-direction: column; /* Empilha a imagem, h4, p e botão dentro de cada card */
-    flex: 1; /* Faz os dois cards terem exatamente o mesmo tamanho lado a lado */
-    max-width: 500px; /* Evita que os cards fiquem gigantescos em telas muito largas */
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 
-  /* 2. ELEMENTOS FILHOS: Controla cada bloco (card) individualmente */
-  .destinations .items p {
-    margin: 0 0 24px;
-    word: 5px;
-    line-height: 27px;
+  .destinations .item h4 {
+    margin: 24px 0 0 0;
   }
 
-  .destinations .items h4 {
-    margin: 0 0 24px;
+  .destinations .item p {
+    margin: 0;
+    width: 536px;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 19px;
   }
-  .destinations .item-image-tokyo,
+
+  .destinations .button {
+    margin: 24px 0 0 0;
+  }
+  .destinations .item-image-tokyo {
+    background: url(../img/Tokyo-tablet-desktop.png) no-repeat center;
+    background-size: cover;
+    width: 588px;
+    max-width: 100%;
+    height: 452px;
+    margin: 0;
+  }
+
   .destinations .item-image-osaka {
-    width: 100%; /* A imagem agora respeita o tamanho responsivo do card */
-    height: 360px; /* Mantém a altura elegante que você escolheu */
-    background-size: cover; /* Preenche o espaço da foto perfeitamente sem distorcer */
-    margin: 0 0 24px 0; /* Remove as margens de 60px do tablet e deixa espaço na base */
+    background: url(../img/Osaka-tablet-desktop.png) no-repeat center;
+    background-size: cover;
+    width: 588px;
+    max-width: 100%;
+    height: 452px;
+    margin: 0;
   }
 }
